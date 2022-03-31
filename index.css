@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0px;
+}
+
+#a {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-blue);
+}
+
+.left-sidemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1vw;
+    background-color: var(--hansenberg-blue);
+    width: 19.5vw;
+    height: 100vh;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+.left-sidemenu>p {
+    background-color: var(--hansenberg-blue);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.7vw;
+    margin-top: 2vh;
+}
+
+.left-sidemenu>a {
+    height: 7.5vh;
+    width: 15vw;
+    border-radius: 1rem;
+    background-color: var(--hansenberg-blue);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-sidemenu>a>i {
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+}
+
+.left-sidemenu>a>p {
+    width: 10vw;
+    font-size: 1.35vw;
+}
+
+.left-sidemenu>a>div {
+    width: 3.4vh;
+    height: 3.4vh;
+    background-color: white;
+    color: var(--hansenberg-orange);
+    border-radius: 2rem;
+    display: grid;
+    place-content: center;
+}
+
+.left-sidemenu>a:hover #angleRightIcon,
+.left-sidemenu>a:hover {
+    background-color: white;
+    color: var(--hansenberg-blue);
+    cursor: pointer;
+}
+
+.left-sidemenu>a:hover #msg {
+    background-color: var(--hansenberg-orange);
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .left-sidemenu>a>p {
+        display: none;
+    }
+    .left-sidemenu>p {
+        display: none;
+    }
+    .left-sidemenu>a>i {}
+    #a {
+        display: unset;
+        visibility: visible;
+    }
+}
