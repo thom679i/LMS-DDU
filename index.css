@@ -87,6 +87,109 @@ body {
     color: white;
 }
 
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.oversigt-main {
+    display: flex;
+    width: fit-content;
+    gap: 2vw;
+    font-family: "trebuchet MS";
+}
+
+.oversigt-main>div>p {
+    color: var(--hansenberg-blue);
+    font-size: 46px;
+}
+
+.oversigt-main>div>p+p {
+    color: var(--smaller-grey-text);
+    font-size: 18px;
+}
+
+.oversigt-main>form {
+    display: flex;
+    height: 54px;
+    width: 18vw;
+}
+
+.oversigt-main>form>input {
+    border: none;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    height: 100%;
+    width: 14vw;
+    padding-left: 1vw;
+    font-size: 18px;
+    color: var(--smaller-grey-text);
+}
+
+.oversigt-main>form>button {
+    height: 100%;
+    width: 40px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border: none;
+    color: var(--smaller-grey-text);
+    background-color: white;
+    font-size: 20px;
+}
+
+.oversigt-main>:nth-child(3)>i {
+    color: var(--hansenberg-blue);
+    font-size: 34px;
+    position: relative;
+}
+
+.oversigt-main>:nth-child(3)>i>p {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 13px;
+    width: 13px;
+    padding: 4px;
+    background-color: var(--hansenberg-orange);
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.oversigt-main>:nth-child(4) {
+    display: flex;
+}
+
+.oversigt-main>:nth-child(4)>:first-child {
+    color: var(--hansenberg-blue);
+}
+
+.oversigt-main>:nth-child(4)>:first-child>:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.oversigt-main>:nth-child(4)>:first-child>p+p {
+    float: right;
+    font-size: 16px;
+}
+
+.oversigt-main>:nth-child(4)>img {
+    margin-left: 10px;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.main-content {
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+}
+
+.mainC-sidebarR {
+    display: flex;
+}
+
 @media only screen and (max-width: 800px) {
     .left-sidemenu>p,
     #angleRightIcon,
@@ -96,5 +199,11 @@ body {
     #left-sidemenuIcons,
     #a {
         display: unset;
+    }
+    .oversigt-main>form>input {
+        display: none;
+    }
+    .oversigt-main>form>button {
+        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
 }
