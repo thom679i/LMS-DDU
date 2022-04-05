@@ -1,10 +1,11 @@
 * {
-    padding: 0;
+    padding: 0px;
     margin: 0px;
 }
 
 #a {
     display: none;
+    padding: 1.5vw;
 }
 
 body {
@@ -23,6 +24,10 @@ body {
     height: 100vh;
     color: white;
     font-family: 'Trebuchet MS';
+}
+
+#left-sidemenuIcons {
+    display: none;
 }
 
 .left-sidemenu>p {
@@ -70,6 +75,7 @@ body {
 }
 
 .left-sidemenu>a:hover #angleRightIcon,
+.left-sidemenu>a:hover #left-sidemenuIcons,
 .left-sidemenu>a:hover {
     background-color: white;
     color: var(--hansenberg-blue);
@@ -82,15 +88,13 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+    .left-sidemenu>p,
+    #angleRightIcon,
     .left-sidemenu>a>p {
         display: none;
     }
-    .left-sidemenu>p {
-        display: none;
-    }
-    .left-sidemenu>a>i {}
+    #left-sidemenuIcons,
     #a {
         display: unset;
-        visibility: visible;
     }
 }
