@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #a {
     display: none;
     padding: 1.5vw;
@@ -14,14 +18,19 @@ body {
     background-color: var(--background-blue);
 }
 
+.test {
+    width: 20%;
+    overflow-y: hidden;
+}
+
 .left-sidemenu {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.1vw;
     background-color: var(--hansenberg-blue);
-    width: 19.5vw;
-    height: 100vh;
+    width: 100%;
+    height: 105vh;
     color: white;
     font-family: 'Trebuchet MS';
 }
@@ -35,7 +44,7 @@ body {
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 2.7vw;
+    font-size: 4.4vh;
     margin-top: 2vh;
 }
 
@@ -89,37 +98,44 @@ body {
 
 .middle {
     display: flex;
+    width: 78%;
+    height: 100%;
+    margin-left: 40px;
     flex-direction: column;
 }
 
 .oversigt-main {
     display: flex;
-    width: fit-content;
-    gap: 2vw;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    gap: 7vw;
     font-family: "trebuchet MS";
 }
 
 .oversigt-main>div>p {
     color: var(--hansenberg-blue);
-    font-size: 46px;
+    font-size: 3vw;
 }
 
 .oversigt-main>div>p+p {
     color: var(--smaller-grey-text);
-    font-size: 18px;
+    font-size: 1.25vw;
 }
 
 .oversigt-main>form {
     display: flex;
+    position: relative;
+    left: 2vw;
     height: 54px;
-    width: 18vw;
+    width: fit-content;
 }
 
 .oversigt-main>form>input {
     border: none;
     border-radius: 0rem 0.5rem 0.5rem 0rem;
     height: 100%;
-    width: 14vw;
+    width: 16.9vw;
     padding-left: 1vw;
     font-size: 18px;
     color: var(--smaller-grey-text);
@@ -135,13 +151,41 @@ body {
     font-size: 20px;
 }
 
-.oversigt-main>:nth-child(3)>i {
+.teacherANotif {
+    display: flex;
+}
+
+.teacherANotif>div+div {
+    color: var(--hansenberg-blue);
+    margin-left: 7.2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.teacherANotif>div>p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.teacherANotif>div>p+p {
+    font-size: 16px;
+}
+
+.teacherANotif>img {
+    margin-left: 10px;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.teacherANotif>div>a>i {
     color: var(--hansenberg-blue);
     font-size: 34px;
     position: relative;
 }
 
-.oversigt-main>:nth-child(3)>i>p {
+.teacherANotif>div>a>i>p {
     position: absolute;
     top: -5px;
     right: -5px;
@@ -154,56 +198,167 @@ body {
     border-radius: 2rem;
 }
 
-.oversigt-main>:nth-child(4) {
+.mainC-sidebarR {
     display: flex;
-}
-
-.oversigt-main>:nth-child(4)>:first-child {
-    color: var(--hansenberg-blue);
-}
-
-.oversigt-main>:nth-child(4)>:first-child>:first-child {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.oversigt-main>:nth-child(4)>:first-child>p+p {
-    float: right;
-    font-size: 16px;
-}
-
-.oversigt-main>:nth-child(4)>img {
-    margin-left: 10px;
-    width: 8vh;
-    height: 8vh;
-    border-radius: 0.5rem;
-    object-fit: cover;
+    position: relative;
+    top: 16px;
 }
 
 .main-content {
-    background-color: aqua;
-    width: 200px;
-    height: 100px;
+    background-color: white;
+    width: 60%;
+    height: 50vh;
+    border-radius: 0.5rem;
 }
 
-.mainC-sidebarR {
+.right-sidebar {
     display: flex;
+    flex-direction: column;
+    background-color: white;
+    left: 70.5%;
+    border-radius: 0.5rem;
+    width: 34%;
+    height: 88vh;
+    position: sticky;
+    top: 6vh;
 }
 
-@media only screen and (max-width: 800px) {
+.right-sidebar>* {
+    margin-left: 25px;
+}
+
+.right-sidebar>a {
+    display: flex;
+    gap: 0.5vw;
+    height: 5.8vh;
+    width: 12vw;
+    border-radius: 0.3rem;
+    background-color: var(--hansenberg-orange);
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>a>i {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-sidebar>p {
+    font-family: 'Trebuchet MS';
+    color: var(--hansenberg-blue);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.right-sidebar>div:first-of-type>div {
+    height: 7vh;
+    width: 85%;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>div:nth-of-type(2)>div {
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>div:first-of-type>div>img {
+    width: 5vw;
+    height: 5vh;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-sidebar>div:nth-of-type(2)>div>img {
+    width: 3vw;
+    height: 6vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(1) {
+    background-color: var(--ibog1);
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(2) {
+    background-color: var(--ibog2);
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(3) {
+    background-color: var(--ibog3);
+}
+
+.right-sidebar>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.right-sidebar>div>div>div>a:first-of-type {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: var(--hansenberg-blue);
+    text-decoration: none;
+}
+
+.right-sidebar>div>div>div>p {
+    font-family: 'Trebuchet MS';
+    color: var(--smaller-grey-text);
+}
+
+@media only screen and (max-width: 1300px) {
     .left-sidemenu>p,
     #angleRightIcon,
-    .left-sidemenu>a>p {
+    .left-sidemenu>a>p,
+    .right-sidebar,
+    .oversigt-main>form>input {
         display: none;
     }
     #left-sidemenuIcons,
     #a {
         display: unset;
     }
-    .oversigt-main>form>input {
-        display: none;
+    .oversigt-main {
+        gap: 4vw;
     }
     .oversigt-main>form>button {
-        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 0.5rem;
+        width: 54px;
+        height: 54px;
+    }
+    #a {
+        width: 13vw;
+    }
+    .oversigt-main>div>p:first-child {
+        font-size: 28px;
+    }
+    .oversigt-main>div>p+p {
+        font-size: 16px;
+    }
+    .main-content {
+        width: 93%;
+    }
+    .oversigt-main>div>p {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .teacherANotif>div>a>i,
+    .teacherANotif>div+div,
+    .oversigt-main>form {
+        display: none;
+    }
+    .oversigt-main {
+        gap: 2vw;
     }
 }
