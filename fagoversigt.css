@@ -205,167 +205,25 @@ body {
 }
 
 .main-content>:first-child {
-    height: fit-content;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.main-content>:first-child>p {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--hansenberg-blue);
-}
-
-.main-content>:first-child>form {
     display: flex;
     margin-left: 0.5vw;
     margin-top: 15px;
     gap: 10px;
 }
 
-.main-content>:first-child>form>:nth-child(2) {
-    background-color: white;
-}
-
-.main-content>:first-child>form>button {
+.main-content>:first-child>button {
+    border: none;
+    background-color: inherit;
     padding: 10px 25px;
     border-radius: 0.5rem;
     font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 14px;
     color: var(--hansenberg-blue);
-    background-color: inherit;
-    border: none;
 }
 
-.main-content>:nth-child(2) {
+.main-content>:first-child>:nth-child(1) {
     background-color: white;
-    width: 85%;
-    height: fit-content;
-    border-radius: 0.5rem;
-}
-
-.main-content>:nth-child(2)>p {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--hansenberg-blue);
-    padding: 15px;
-}
-
-.main-content>:nth-child(2)>form {
-    display: flex;
-    gap: 25px;
-    margin-left: 1vw;
-    padding-bottom: 15px;
-}
-
-.main-content>:nth-child(2)>form>fieldset {
-    border: 2px solid var(--grey-border);
-    border-radius: 0.5rem;
-    width: 42%;
-    font-size: 15px;
-    font-family: 'Trebuchet MS';
-    color: var(--hansenberg-blue);
-    padding-left: 0.5vw;
-}
-
-.main-content>:nth-child(2)>form>fieldset>legend {
-    padding: 0px 8px;
-}
-
-.main-content>:nth-child(2)>form>fieldset>input {
-    border: none;
-    width: 90%;
-    margin-bottom: 6px;
-    padding: 0.5vw;
-    border-radius: 0.5rem;
-    color: var(--smaller-grey-text);
-}
-
-.main-content>:nth-child(3) {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.main-content>:nth-child(3)>div {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    width: 46%;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 0.5rem;
-}
-
-.main-content>:nth-child(3)>div>img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    margin-right: 15px;
-}
-
-.main-content>:nth-child(3)>:nth-child(1)>img {
-    border: 1px solid var(--hansenberg-blue);
-}
-
-.main-content>:nth-child(3)>div>div>p:nth-of-type(1),
-.main-content>:nth-child(3)>div>div>form>input:nth-of-type(1) {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    font-size: clamp(12px, 3vw, 20px);
-    color: var(--hansenberg-blue);
-    border: none;
-}
-
-.main-content>:nth-child(3)>div>div>p:not(p:nth-of-type(1)),
-.main-content>:nth-child(3)>div>div>form>div>input::placeholder,
-.main-content>:nth-child(3)>div>div>form>div>input {
-    font-family: 'Trebuchet MS';
-    font-size: clamp(8px, 3vw, 13px);
-    color: var(--smaller-grey-text);
-}
-
-.main-content>:nth-child(3)>div>div>form>div>p {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    font-size: clamp(8px, 3vw, 13px);
-    color: var(--smaller-grey-text);
-}
-
-.main-content>:nth-of-type(3)>div>div>form>input {
-    width: 170px;
-}
-
-.main-content>:nth-child(3)>div>div>form>div>input {
-    margin-left: 5px;
-    width: 125px;
-    border: none;
-}
-
-.main-content>:nth-child(3)>div>div>form>div {
-    display: flex;
-}
-
-#personPlus {
-    margin-top: 7px;
-    margin-right: 7px;
-    margin-left: auto;
-    margin-bottom: auto;
-    color: var(--confirmed-green);
-}
-
-#personX {
-    margin-top: 7px;
-    margin-right: 7px;
-    margin-left: auto;
-    margin-bottom: auto;
-    color: var(--delete-red);
 }
 
 .right-sidebar {
