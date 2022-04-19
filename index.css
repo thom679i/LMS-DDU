@@ -18,19 +18,14 @@ body {
     background-color: var(--background-blue);
 }
 
-.test {
-    width: 20%;
-    overflow-y: hidden;
-}
-
 .left-sidemenu {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.1vw;
     background-color: var(--hansenberg-blue);
-    width: 100%;
-    height: 105vh;
+    width: 20%;
+    height: 120vh;
     color: white;
     font-family: 'Trebuchet MS';
 }
@@ -100,7 +95,7 @@ body {
     display: flex;
     width: 78%;
     height: 100%;
-    margin-left: 40px;
+    margin-left: 4vw;
     flex-direction: column;
 }
 
@@ -205,10 +200,141 @@ body {
 }
 
 .main-content {
-    background-color: white;
     width: 60%;
-    height: 50vh;
+    height: 100vh;
+}
+
+.main-content>:first-child {
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.main-content>:first-child>p {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:first-child>div {
+    display: flex;
+    margin-left: 0.5vw;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.main-content>:first-child>div>div {
+    padding: 10px 25px;
     border-radius: 0.5rem;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:first-child>div>:nth-child(2) {
+    background-color: white;
+}
+
+.main-content>:nth-child(2) {
+    background-color: white;
+    width: 85%;
+    height: fit-content;
+    border-radius: 0.5rem;
+}
+
+.main-content>:nth-child(2)>p {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--hansenberg-blue);
+    padding: 15px;
+}
+
+.main-content>:nth-child(2)>form {
+    display: flex;
+    gap: 25px;
+    margin-left: 1vw;
+    padding-bottom: 15px;
+}
+
+.main-content>:nth-child(2)>form>fieldset {
+    border: 2px solid var(--grey-border);
+    border-radius: 0.5rem;
+    width: 42%;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+    color: var(--hansenberg-blue);
+    padding-left: 0.5vw;
+}
+
+.main-content>:nth-child(2)>form>fieldset>legend {
+    padding: 0px 8px;
+}
+
+.main-content>:nth-child(2)>form>fieldset>input {
+    border: none;
+    width: 90%;
+    margin-bottom: 6px;
+    padding: 0.5vw;
+    border-radius: 0.5rem;
+    color: var(--smaller-grey-text);
+}
+
+.main-content>:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-content>:nth-child(3)>div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 46%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.main-content>:nth-child(3)>div>img {
+    border-radius: 0.5rem;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.main-content>:nth-child(3)>div>div>p:nth-of-type(1) {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: clamp(12px, 3vw, 20px);
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:nth-child(3)>div>div>p:not(p:nth-of-type(1)) {
+    font-family: 'Trebuchet MS';
+    font-size: clamp(8px, 3vw, 13px);
+    color: var(--smaller-grey-text);
+}
+
+#personPlus {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-left: auto;
+    margin-bottom: auto;
+    color: var(--confirmed-green);
+}
+
+#personX {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-left: auto;
+    margin-bottom: auto;
+    color: var(--delete-red);
 }
 
 .right-sidebar {
@@ -360,5 +486,21 @@ body {
     }
     .oversigt-main {
         gap: 2vw;
+    }
+    .main-content>:first-child>div,
+    .main-content>:nth-child(2)>form {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content>:nth-child(2)>form {
+        align-items: center;
+        justify-content: center;
+    }
+    .main-content>:nth-child(2)>form>fieldset {
+        width: 80%;
+    }
+    .main-content>:nth-child(2),
+    .main-content>:nth-child(3)>div {
+        width: 100%;
     }
 }
