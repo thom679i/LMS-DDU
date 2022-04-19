@@ -301,24 +301,53 @@ body {
 }
 
 .main-content>:nth-child(3)>div>img {
-    border-radius: 0.5rem;
+    border-radius: 50%;
     width: 70px;
     height: 70px;
     object-fit: cover;
     margin-right: 15px;
 }
 
-.main-content>:nth-child(3)>div>div>p:nth-of-type(1) {
+.main-content>:nth-child(3)>:nth-child(1)>img {
+    border: 1px solid var(--hansenberg-blue);
+}
+
+.main-content>:nth-child(3)>div>div>p:nth-of-type(1),
+.main-content>:nth-child(3)>div>div>form>input:nth-of-type(1) {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: clamp(12px, 3vw, 20px);
     color: var(--hansenberg-blue);
+    border: none;
 }
 
-.main-content>:nth-child(3)>div>div>p:not(p:nth-of-type(1)) {
+.main-content>:nth-child(3)>div>div>p:not(p:nth-of-type(1)),
+.main-content>:nth-child(3)>div>div>form>div>input::placeholder,
+.main-content>:nth-child(3)>div>div>form>div>input {
     font-family: 'Trebuchet MS';
     font-size: clamp(8px, 3vw, 13px);
     color: var(--smaller-grey-text);
+}
+
+.main-content>:nth-child(3)>div>div>form>div>p {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: clamp(8px, 3vw, 13px);
+    color: var(--smaller-grey-text);
+}
+
+.main-content>:nth-of-type(3)>div>div>form>input {
+    width: 170px;
+}
+
+.main-content>:nth-child(3)>div>div>form>div>input {
+    margin-left: 5px;
+    width: 125px;
+    border: none;
+}
+
+.main-content>:nth-child(3)>div>div>form>div {
+    display: flex;
 }
 
 #personPlus {
