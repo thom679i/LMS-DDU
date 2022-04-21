@@ -506,4 +506,17 @@ hr {
     .faghold {
         width: 100%;
     }
+    .main-content>:last-child>:last-child>p,
+    .main-content>:first-child>div>p:not(:first-child),
+    .main-content> :last-child> :first-child>div>p {
+        font-size: 2.5vw;
+    }
+    .main-content> :last-child> :last-child> :first-child>p,
+    .main-content> :last-child> :last-child>hr+div>p,
+    .main-content> :last-child> :first-child>p {
+        font-size: 3.5vw;
+    }
+    .main-content>:last-child>:first-child>div>p {
+        width: auto;
+    }
 }
