@@ -24,7 +24,7 @@ body {
     align-items: center;
     gap: 1.1vw;
     background-color: var(--hansenberg-blue);
-    width: 20%;
+    width: 19%;
     height: 120vh;
     color: white;
     font-family: 'Trebuchet MS';
@@ -224,7 +224,7 @@ body {
     gap: 10px;
 }
 
-.main-content>:first-child>form>:nth-child(2) {
+.main-content>:first-child>form>button:hover {
     background-color: white;
 }
 
