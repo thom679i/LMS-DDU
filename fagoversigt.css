@@ -27,7 +27,6 @@ body {
     width: 19%;
     height: 120vh;
     color: white;
-    font-family: 'Trebuchet MS';
 }
 
 #left-sidemenuIcons {
@@ -105,7 +104,6 @@ body {
     margin-top: 15px;
     width: 100%;
     gap: 7vw;
-    font-family: "trebuchet MS";
 }
 
 .oversigt-main>div>p {
@@ -212,7 +210,6 @@ body {
 }
 
 .faghold>p {
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 20px;
     color: var(--hansenberg-blue);
@@ -231,7 +228,6 @@ body {
     border-radius: 0.5rem;
     width: 85%;
     font-size: 15px;
-    font-family: 'Trebuchet MS';
     color: var(--hansenberg-blue);
     padding-left: 0.5vw;
 }
@@ -261,7 +257,6 @@ body {
     background-color: inherit;
     padding: 10px 25px;
     border-radius: 0.5rem;
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 14px;
     color: var(--hansenberg-blue);
@@ -311,7 +306,6 @@ body {
 
 .categories>div>div>:first-child,
 .categories>div>form>:first-child {
-    font-family: 'Trebuchet MS';
     font-size: 16px;
     color: var(--hansenberg-blue);
     border: none;
@@ -319,7 +313,6 @@ body {
 
 .categories>div>div>:last-child,
 .categories>div>form>:nth-child(2) {
-    font-family: 'Trebuchet MS';
     font-size: 12px;
     color: var(--smaller-grey-text);
     border: none;
@@ -333,7 +326,6 @@ body {
     border: none;
     background-color: var(--hansenberg-orange);
     color: white;
-    font-family: 'Trebuchet MS';
     font-size: 14px;
     text-decoration: none;
     text-align: center;
@@ -366,7 +358,6 @@ body {
     border-radius: 0.3rem;
     background-color: var(--hansenberg-orange);
     color: white;
-    font-family: 'Trebuchet MS';
     font-size: 14px;
     text-decoration: none;
     flex-direction: row;
@@ -383,7 +374,6 @@ body {
 }
 
 .right-sidebar>p {
-    font-family: 'Trebuchet MS';
     color: var(--hansenberg-blue);
     margin-bottom: 10px;
     font-weight: bold;
@@ -435,14 +425,12 @@ body {
 }
 
 .right-sidebar>div>div>div>a:first-of-type {
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     color: var(--hansenberg-blue);
     text-decoration: none;
 }
 
 .right-sidebar>div>div>div>p {
-    font-family: 'Trebuchet MS';
     color: var(--smaller-grey-text);
 }
 

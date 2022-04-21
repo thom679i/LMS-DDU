@@ -1,10 +1,12 @@
 :root {
+    font-family: 'Trebuchet MS';
     --background-blue: #ECEFF6;
     --hansenberg-blue: #5A6379;
     --hansenberg-orange: #E7BE7E;
     --smaller-grey-text: #919191;
     --hrDivider-grey: #E3E4E8;
     --grey-border: #A3A2A9;
+    --uploadCircle-greyblue: #E0E3EA;
     --delete-red: #B64545;
     --confirmed-green: #44C444;
     --awaiting-yellow: #E7DB72;

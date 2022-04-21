@@ -27,7 +27,6 @@ body {
     width: 19%;
     height: 120vh;
     color: white;
-    font-family: 'Trebuchet MS';
 }
 
 #left-sidemenuIcons {
@@ -105,7 +104,6 @@ body {
     margin-top: 15px;
     width: 100%;
     gap: 7vw;
-    font-family: "trebuchet MS";
 }
 
 .oversigt-main>div>p {
@@ -226,14 +224,12 @@ body {
 }
 
 .main-content>:first-child>div>:first-child {
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 24px;
     color: var(--hansenberg-blue);
 }
 
 .main-content>:first-child>div>p:not(:first-child) {
-    font-family: 'Trebuchet MS';
     font-size: 16px;
     color: var(--smaller-grey-text);
 }
@@ -242,7 +238,6 @@ body {
     display: flex;
     gap: 2%;
     margin-top: 20px;
-    font-family: 'Trebuchet MS';
 }
 
 .main-content>:last-child>div {
@@ -316,7 +311,6 @@ hr {
 .main-content>:last-child>:last-child>:first-child>form>button>i,
 .main-content>:last-child>:last-child>hr+div>form>button>i {
     margin-right: 18px;
-    font-family: 'Trebuchet MS';
     font-size: 28px;
     color: var(--hansenberg-blue);
 }
@@ -361,7 +355,6 @@ hr {
     border-radius: 0.3rem;
     background-color: var(--hansenberg-orange);
     color: white;
-    font-family: 'Trebuchet MS';
     font-size: 14px;
     text-decoration: none;
     flex-direction: row;
@@ -378,7 +371,6 @@ hr {
 }
 
 .right-sidebar>p {
-    font-family: 'Trebuchet MS';
     color: var(--hansenberg-blue);
     margin-bottom: 10px;
     font-weight: bold;
@@ -430,14 +422,12 @@ hr {
 }
 
 .right-sidebar>div>div>div>a:first-of-type {
-    font-family: 'Trebuchet MS';
     font-weight: bold;
     color: var(--hansenberg-blue);
     text-decoration: none;
 }
 
 .right-sidebar>div>div>div>p {
-    font-family: 'Trebuchet MS';
     color: var(--smaller-grey-text);
 }
 
