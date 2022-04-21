@@ -204,14 +204,14 @@ body {
     height: 100vh;
 }
 
-.addCategory {
+.faghold {
     background-color: white;
-    width: 92.5%;
+    width: 50%;
     height: fit-content;
     border-radius: 0.5rem;
 }
 
-.addCategory>p {
+.faghold>p {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 20px;
@@ -219,49 +219,34 @@ body {
     padding: 15px;
 }
 
-.addCategory>form {
+.faghold>form {
     display: flex;
     gap: 25px;
     margin-left: 1vw;
     padding-bottom: 15px;
 }
 
-.addCategory>form>fieldset {
+.faghold>form>fieldset {
     border: 2px solid var(--grey-border);
     border-radius: 0.5rem;
-    width: 42%;
+    width: 85%;
     font-size: 15px;
     font-family: 'Trebuchet MS';
     color: var(--hansenberg-blue);
     padding-left: 0.5vw;
 }
 
-.addCategory>form>fieldset>legend {
+.faghold>form>fieldset>legend {
     padding: 0px 8px;
 }
 
-.addCategory>form>fieldset>input {
+.faghold>form>fieldset>input {
     border: none;
     width: 90%;
     margin-bottom: 6px;
     padding: 0.5vw;
     border-radius: 0.5rem;
     color: var(--smaller-grey-text);
-}
-
-.addCategory>form>button {
-    height: 5.8vh;
-    width: 120px;
-    border-radius: 0.3rem;
-    border: none;
-    background-color: var(--hansenberg-orange);
-    color: white;
-    font-family: 'Trebuchet MS';
-    font-size: 14px;
-    text-decoration: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 20px;
 }
 
 .classChoice {
@@ -311,7 +296,12 @@ body {
     object-fit: cover;
 }
 
-.categories>div>div {
+.categories>div>i {
+    margin-top: 10px;
+}
+
+.categories>div>div,
+.categories>div>form {
     width: 93%;
     margin-top: 3px;
     display: flex;
@@ -319,15 +309,36 @@ body {
     gap: 3px;
 }
 
-.categories>div>div>:first-child {
+.categories>div>div>:first-child,
+.categories>div>form>:first-child {
     font-family: 'Trebuchet MS';
+    font-size: 16px;
     color: var(--hansenberg-blue);
+    border: none;
 }
 
-.categories>div>div>:last-child {
+.categories>div>div>:last-child,
+.categories>div>form>:nth-child(2) {
     font-family: 'Trebuchet MS';
     font-size: 12px;
     color: var(--smaller-grey-text);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.categories>div>form>button {
+    height: 5.8vh;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: var(--hansenberg-orange);
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
 }
 
@@ -496,7 +507,8 @@ body {
     }
     .main-content>:nth-child(2),
     .main-content>:nth-child(3)>div,
-    .classChoice>form>button {
+    .classChoice>form>button,
+    .faghold {
         width: 100%;
     }
 }
