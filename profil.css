@@ -1,0 +1,509 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#a {
+    display: none;
+    padding: 1.5vw;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-blue);
+}
+
+.left-sidemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1vw;
+    background-color: var(--hansenberg-blue);
+    width: 19%;
+    height: 120vh;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+#left-sidemenuIcons {
+    display: none;
+}
+
+.left-sidemenu>p {
+    background-color: var(--hansenberg-blue);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.4vh;
+    margin-top: 2vh;
+}
+
+.left-sidemenu>a {
+    height: 7.5vh;
+    width: 15vw;
+    border-radius: 1rem;
+    background-color: var(--hansenberg-blue);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-sidemenu>a>i {
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+}
+
+.left-sidemenu>a>p {
+    width: 10vw;
+    font-size: 1.35vw;
+}
+
+.left-sidemenu>a>div {
+    width: 3.4vh;
+    height: 3.4vh;
+    background-color: white;
+    color: var(--hansenberg-orange);
+    border-radius: 2rem;
+    display: grid;
+    place-content: center;
+}
+
+.left-sidemenu>a:hover #angleRightIcon,
+.left-sidemenu>a:hover #left-sidemenuIcons,
+.left-sidemenu>a:hover {
+    background-color: white;
+    color: var(--hansenberg-blue);
+    cursor: pointer;
+}
+
+.left-sidemenu>a:hover #msg {
+    background-color: var(--hansenberg-orange);
+    color: white;
+}
+
+.middle {
+    display: flex;
+    width: 78%;
+    height: 100%;
+    margin-left: 4vw;
+    flex-direction: column;
+}
+
+.oversigt-main {
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    gap: 7vw;
+    font-family: "trebuchet MS";
+}
+
+.oversigt-main>div>p {
+    color: var(--hansenberg-blue);
+    font-size: 3vw;
+}
+
+.oversigt-main>div>p+p {
+    color: var(--smaller-grey-text);
+    font-size: 1.25vw;
+}
+
+.oversigt-main>form {
+    display: flex;
+    position: relative;
+    left: 2vw;
+    height: 54px;
+    width: fit-content;
+}
+
+.oversigt-main>form>input {
+    border: none;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    height: 100%;
+    width: 16.9vw;
+    padding-left: 1vw;
+    font-size: 18px;
+    color: var(--smaller-grey-text);
+}
+
+.oversigt-main>form>button {
+    height: 100%;
+    width: 40px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border: none;
+    color: var(--smaller-grey-text);
+    background-color: white;
+    font-size: 20px;
+}
+
+.teacherANotif {
+    display: flex;
+}
+
+.teacherANotif>div+div {
+    color: var(--hansenberg-blue);
+    margin-left: 7.2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.teacherANotif>div>p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.teacherANotif>div>p+p {
+    font-size: 16px;
+}
+
+.teacherANotif>img {
+    margin-left: 10px;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.teacherANotif>div>a>i {
+    color: var(--hansenberg-blue);
+    font-size: 34px;
+    position: relative;
+}
+
+.teacherANotif>div>a>i>p {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 13px;
+    width: 13px;
+    padding: 4px;
+    background-color: var(--hansenberg-orange);
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.mainC-sidebarR {
+    display: flex;
+    position: relative;
+    top: 16px;
+}
+
+.main-content {
+    width: 60%;
+    height: 100vh;
+}
+
+.main-content>:first-child {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.main-content>:first-child>img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.main-content>:first-child>div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.main-content>:first-child>div>:first-child {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:first-child>div>p:not(:first-child) {
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    color: var(--smaller-grey-text);
+}
+
+.main-content>:last-child {
+    display: flex;
+    gap: 2%;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS';
+}
+
+.main-content>:last-child>div {
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.main-content>:last-child>:first-child {
+    width: 59%;
+}
+
+.main-content>:last-child>:last-child {
+    width: 39%;
+}
+
+.main-content>:last-child>:first-child>p {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--hansenberg-blue);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content>:last-child>:first-child>div {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    gap: 2vw;
+}
+
+.main-content>:last-child>:first-child>div>p {
+    width: 50%;
+}
+
+.main-content>:last-child>:first-child>:nth-child(3)>p {
+    font-weight: bold;
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:last-child>:first-child>div>p {
+    color: var(--smaller-grey-text);
+}
+
+hr {
+    border-color: var(--hrDivider-grey);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.main-content>:last-child>:last-child>:first-child,
+.main-content>:last-child>:last-child>hr+div {
+    display: flex;
+    align-items: center;
+}
+
+.main-content>:last-child>:last-child>:first-child>form,
+.main-content>:last-child>:last-child>hr+div>form {
+    margin-left: auto;
+}
+
+.main-content>:last-child>:last-child>:first-child>form>button,
+.main-content>:last-child>:last-child>hr+div>form>button {
+    border: none;
+    background-color: inherit;
+}
+
+.main-content>:last-child>:last-child>:first-child>form>button>i,
+.main-content>:last-child>:last-child>hr+div>form>button>i {
+    margin-right: 18px;
+    font-family: 'Trebuchet MS';
+    font-size: 28px;
+    color: var(--hansenberg-blue);
+}
+
+.main-content>:last-child>:last-child>:first-child>p,
+.main-content>:last-child>:last-child>hr+div>p {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--hansenberg-blue);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content>:last-child>:last-child>p {
+    color: var(--smaller-grey-text);
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    left: 70.5%;
+    border-radius: 0.5rem;
+    width: 34%;
+    height: 88vh;
+    position: sticky;
+    top: 6vh;
+}
+
+.right-sidebar>* {
+    margin-left: 25px;
+}
+
+.right-sidebar>a {
+    display: flex;
+    gap: 0.5vw;
+    height: 5.8vh;
+    width: 12vw;
+    border-radius: 0.3rem;
+    background-color: var(--hansenberg-orange);
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>a>i {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-sidebar>p {
+    font-family: 'Trebuchet MS';
+    color: var(--hansenberg-blue);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.right-sidebar>div:first-of-type>div {
+    height: 7vh;
+    width: 85%;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>div:nth-of-type(2)>div {
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.right-sidebar>div:first-of-type>div>img {
+    width: 5vw;
+    height: 5vh;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-sidebar>div:nth-of-type(2)>div>img {
+    width: 3vw;
+    height: 6vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(1) {
+    background-color: var(--ibog1);
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(2) {
+    background-color: var(--ibog2);
+}
+
+.right-sidebar>div:first-of-type>:nth-of-type(3) {
+    background-color: var(--ibog3);
+}
+
+.right-sidebar>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.right-sidebar>div>div>div>a:first-of-type {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: var(--hansenberg-blue);
+    text-decoration: none;
+}
+
+.right-sidebar>div>div>div>p {
+    font-family: 'Trebuchet MS';
+    color: var(--smaller-grey-text);
+}
+
+@media only screen and (max-width: 1300px) {
+    .left-sidemenu>p,
+    #angleRightIcon,
+    .left-sidemenu>a>p,
+    .right-sidebar,
+    .oversigt-main>form>input {
+        display: none;
+    }
+    #left-sidemenuIcons,
+    #a {
+        display: unset;
+    }
+    .oversigt-main {
+        gap: 4vw;
+    }
+    .oversigt-main>form>button {
+        border-radius: 0.5rem;
+        width: 54px;
+        height: 54px;
+    }
+    #a {
+        width: 13vw;
+    }
+    .oversigt-main>div>p:first-child {
+        font-size: 28px;
+    }
+    .oversigt-main>div>p+p {
+        font-size: 16px;
+    }
+    .main-content {
+        width: 93%;
+    }
+    .oversigt-main>div>p {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .teacherANotif>div>a>i,
+    .teacherANotif>div+div,
+    .oversigt-main>form {
+        display: none;
+    }
+    .oversigt-main {
+        gap: 2vw;
+    }
+    .main-content>:first-child>div,
+    .main-content>:nth-child(2)>form,
+    .classChoice {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content>:nth-child(2)>form {
+        align-items: center;
+        justify-content: center;
+    }
+    .main-content>:nth-child(2)>form>fieldset {
+        width: 80%;
+    }
+    .main-content>:nth-child(2),
+    .main-content>:nth-child(3)>div,
+    .classChoice>form>button,
+    .faghold {
+        width: 100%;
+    }
+}
