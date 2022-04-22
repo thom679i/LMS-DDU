@@ -25,7 +25,7 @@ body {
     gap: 1.1vw;
     background-color: var(--hansenberg-blue);
     width: 19%;
-    height: 130vh;
+    height: 120vh;
     color: white;
 }
 
@@ -199,319 +199,25 @@ body {
 
 .main-content {
     width: 60%;
-    height: 110vh;
+    height: 100vh;
 }
 
-.main-content>div {
+.main-content>:first-child {
+    padding: 15px;
     background-color: white;
     border-radius: 0.5rem;
-    padding: 20px;
-}
-
-.main-content>div>p {
-    font-weight: bold;
-    font-size: 24px;
-    color: var(--hansenberg-blue);
-    padding-bottom: 34px;
-}
-
-.main-content>div>p:last-of-type {
-    padding-top: 34px;
-}
-
-.main-content>div>div:first-of-type {
     display: flex;
-    gap: 20px;
-    height: 50%;
-}
-
-.main-content>div>div:first-of-type>div {
-    width: 100%;
-}
-
-.main-content>div>div>div>p {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--hansenberg-blue);
-    margin-bottom: 20px;
-}
-
-.main-content>div>div:first-of-type>div:first-of-type {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content>div>div:first-of-type>div:first-of-type>div {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    color: var(--hansenberg-blue);
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23A3A2A9FF' stroke-width='3' stroke-dasharray='8' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.main-content>div>div:first-of-type>div:first-of-type>div>form>button {
-    width: 5vw;
-    min-width: 50px;
-    height: 5vw;
-    min-height: 50px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--uploadCircle-greyblue);
-    font-size: 27px;
-    color: inherit;
-}
-
-.groups>div:first-of-type {
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
-    border: 1px solid var(--grey-border);
-    height: fit-content;
-    padding: 1vw;
-}
-
-.groups>div:first-of-type>div {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
-.groups>div:first-of-type>div>div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.groups>div:first-of-type>div>div {
+.main-content>:first-child>div>p {
     color: var(--hansenberg-blue);
+    font-weight: bold;
 }
 
-.groups>div:first-of-type>div>div>form>input {
-    width: 1.3em;
-    height: 1.3em;
-    border-radius: 50%;
-    vertical-align: middle;
-    outline: 1px solid var(--grey-border);
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-.groups>div:first-of-type>div>div>form>input:checked {
-    background-color: var(--hansenberg-orange);
-    outline: 1px solid var(--hansenberg-orange);
-    border: 3px solid white;
-}
-
-.groups>div>form>fieldset {
-    border: 2px solid var(--grey-border);
-    border-radius: 0.5rem;
-    width: 50%;
-    font-size: 15px;
+.main-content>:first-child>div>div>p {
     color: var(--hansenberg-blue);
-    padding-left: 0.5vw;
-}
-
-.groups>div>form>fieldset>legend {
-    padding: 0px 8px;
-}
-
-.groups>div>form>fieldset>input {
-    border: none;
-    width: 85%;
-    margin-bottom: 6px;
-    padding: 0.5vw;
-    border-radius: 0.5rem;
-    color: var(--smaller-grey-text);
-}
-
-.groups>:last-child {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 0rem 0rem 0.5rem 0.5rem;
-    border: 1px solid var(--grey-border);
-    height: 16vh;
-    overflow-y: auto;
-    scrollbar-width: thin;
-}
-
-.groups>:last-child>div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.groups>:last-child>div>div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.groups>:last-child>div>div>img {
-    width: 5vh;
-    height: 5vh;
-    border-radius: 0.5rem;
-    object-fit: cover;
-}
-
-.groups>:last-child>div>div>form>button {
-    border: none;
-    background-color: inherit;
-}
-
-.groups>:last-child>div>div>p:first-child {
-    color: var(--hansenberg-blue);
-    font-size: 18px;
-}
-
-#personPlus {
-    margin-left: 15px;
-}
-
-#personX {
-    color: var(--delete-red);
-}
-
-.andetAflevering {
-    display: flex;
-    gap: 20px;
-    height: 50%;
-}
-
-.andetAflevering>div:first-of-type {
-    display: flex;
-    flex-direction: column;
-}
-
-.andetAflevering>div {
-    width: 100%;
-}
-
-.andetAflevering>div>fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-    flex-grow: 1;
-    border: 2px solid var(--grey-border);
-    border-radius: 0.5rem;
-    width: calc(100% - 0.5vw);
-    font-size: 15px;
-    color: var(--hansenberg-blue);
-    padding-left: 0.5vw;
-    padding-bottom: 10px;
-}
-
-.andetAflevering>div>fieldset>legend {
-    padding: 0px 8px;
-}
-
-.andetAflevering>div>fieldset>form>fieldset {
-    border: 2px solid var(--grey-border);
-    border-radius: 0.5rem;
-    width: calc(90% - 0.5vw);
-    font-size: 15px;
-    color: var(--hansenberg-blue);
-    padding-left: 0.5vw;
-}
-
-.andetAflevering>div>fieldset>form>fieldset>legend {
-    padding: 0px 8px;
-}
-
-.andetAflevering>div>fieldset>form>fieldset>input {
-    border: none;
-    width: 80%;
-    margin-bottom: 6px;
-    padding: 0.25vw;
-    border-radius: 0.5rem;
-    color: var(--smaller-grey-text);
-}
-
-.andetAflevering>div>fieldset>div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.andetAflevering>div>fieldset>div>form>input {
-    width: 1.3em;
-    height: 1.3em;
-    border-radius: 50%;
-    vertical-align: middle;
-    outline: 1px solid var(--grey-border);
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-.andetAflevering>div>fieldset>div>form>input:checked {
-    background-color: var(--hansenberg-orange);
-    outline: 1px solid var(--hansenberg-orange);
-    border: 3px solid white;
-}
-
-.andetAflevering>div:first-of-type>form>fieldset,
-.andetAflevering>div:last-of-type>:first-child>fieldset {
-    margin-bottom: 10px;
-}
-
-.andetAflevering>div>form>fieldset {
-    border: 2px solid var(--grey-border);
-    border-radius: 0.5rem;
-    width: calc(100% - 0.5vw);
-    font-size: 15px;
-    color: var(--hansenberg-blue);
-    padding-left: 0.5vw;
-}
-
-.andetAflevering>div>form>fieldset>legend {
-    padding: 0px 8px;
-}
-
-.andetAflevering>div>form>fieldset>input {
-    border: none;
-    width: 90%;
-    margin-bottom: 6px;
-    padding: 0.5vw;
-    border-radius: 0.5rem;
-    color: var(--smaller-grey-text);
-}
-
-.andetAflevering>:last-child {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.andetAflevering>:last-child>:nth-child(1) {
-    flex-grow: 1;
-}
-
-.main-content>div>form {
-    display: flex;
-    justify-content: right;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
-.main-content>div>form>button {
-    gap: 0.5vw;
-    height: 5.8vh;
-    width: 160px;
-    border-radius: 0.3rem;
-    border: none;
-    background-color: var(--hansenberg-orange);
-    color: white;
-    font-size: 14px;
+    font-weight: 12px;
 }
 
 .right-sidebar {
@@ -649,9 +355,6 @@ body {
     .oversigt-main>div>p {
         font-size: 4vw;
     }
-    .groups>div>form>fieldset {
-        width: 95%;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -681,8 +384,5 @@ body {
     .classChoice>form>button,
     .faghold {
         width: 100%;
-    }
-    .main-content>div>div:first-of-type>div:first-of-type>div {
-        height: fit-content;
     }
 }
