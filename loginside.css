@@ -89,6 +89,7 @@ hr {
     width: 100%;
     height: 45px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .loginBox>form:last-of-type {
