@@ -208,16 +208,88 @@ body {
     border-radius: 0.5rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.main-content>:first-child>div>p {
+.main-content>:first-child>div>p:not(.main-content>:first-child>div>:nth-child(2)) {
     color: var(--hansenberg-blue);
     font-weight: bold;
+}
+
+.main-content>:first-child>div>:nth-child(2) {
+    color: var(--smaller-grey-text);
 }
 
 .main-content>:first-child>div>div>p {
     color: var(--hansenberg-blue);
     font-weight: 12px;
+}
+
+.main-content>:first-child>div>div,
+.main-content>:last-child>:first-child>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.main-content>:first-child>div>div>img {
+    width: 25px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.main-content>:first-child>:nth-child(3)>div>img,
+.main-content>:last-child>:first-child>div>img {
+    width: 45px;
+    height: 45px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.main-content>:first-child>:nth-child(3)>div>div {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: var(--confirmed-green);
+}
+
+.main-content>:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.main-content>:last-child>:first-child>div>form>button {
+    border: 1px solid var(--grey-border);
+    color: var(--hansenberg-blue);
+    background-color: inherit;
+    border-radius: 0.5rem;
+    width: 25px;
+    height: 25px;
+}
+
+.main-content>:last-child>:first-child>:last-child>form>button {
+    border: none;
+    background-color: var(--hansenberg-blue);
+    color: white;
+    font-weight: bold;
+}
+
+.main-content>:last-child>:last-child>div>form>textarea {
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-border);
+    resize: none;
+    padding: 10px;
+    width: 22.5vw;
+    height: 20vh;
 }
 
 .right-sidebar {
@@ -379,10 +451,7 @@ body {
     .main-content>:nth-child(2)>form>fieldset {
         width: 80%;
     }
-    .main-content>:nth-child(2),
-    .main-content>:nth-child(3)>div,
-    .classChoice>form>button,
-    .faghold {
-        width: 100%;
+    .main-content>:last-child>:last-child>div>form>textarea {
+        width: 150px;
     }
 }

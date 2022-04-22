@@ -483,17 +483,8 @@ body {
     .main-content>:nth-child(2)>form>fieldset {
         width: 80%;
     }
-    .main-content>:nth-child(2),
-    .main-content>:nth-child(3)>div,
-    .classChoice>form>button,
-    .faghold {
-        width: 100%;
-    }
     .main-content>div>div:last-of-type>:nth-child(1)>div,
     .main-content>div>div:last-of-type>:nth-child(2)>div {
         height: fit-content;
-    }
-    .mainC-sidebarR {
-        width: 92%;
     }
 }
